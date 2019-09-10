@@ -8,8 +8,8 @@
 <h1><a href="" > My Blog</a></h1>
 {% for post in posts %}
 <div>
-       <p>Publishrd :{{post.published_date}}</p>
-<h1> <a href="" >{{post.title}}</a></h1>
+       <p>Published :{{post.published_date}}</p>
+<h1> <a href="{% url 'post_detail' pk=post.pk%}" >{{post.title}}</a></h1>
        <p> {{post.text|linebreaksbr}}</p>
 </div>
 {% endfor %}
