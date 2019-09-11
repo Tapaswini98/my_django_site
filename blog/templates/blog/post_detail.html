@@ -11,7 +11,8 @@
     </div>
 
     {% endif %}
-
+    <a href="{% url 'post_edit' pk = post.pk%}">
+        <i class="fa fa-pencil-square" aria-hidden="true" style="color:#3339af"></i> </a>
     <h1>{{post.title}}</h1>
     <p>{{post.text |linebreaksbr}}</p>
 </div>
